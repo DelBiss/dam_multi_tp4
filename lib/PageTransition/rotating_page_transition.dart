@@ -25,10 +25,10 @@ class RotatingPageTransition extends PageTransitionsBuilder{
       var tween2 = Tween(begin: 0.0, end: begin*-1).chain(CurveTween(curve: curve));
       
       return Box3DTransition(
-          key: ValueKey("In-${route.settings.name}"),
+          key: ValueKey("In-${route.settings.name}"), //To ease debuging
           angle: animation.drive(tween1),
           child: Box3DTransition(
-            key: ValueKey("Out-${route.settings.name}"),
+            key: ValueKey("Out-${route.settings.name}"), //To ease debuging
           angle: secondaryAnimation.drive(tween2),
           child: child
         )
