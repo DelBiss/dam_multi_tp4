@@ -7,7 +7,13 @@ class ToogleWidget extends StatefulWidget {
   final Duration duration;
   final double startOpacity;
   final double transitionOpacity;
-  const ToogleWidget({ Key? key, this.duration = const Duration(milliseconds: 300), this.startOpacity = 0.3, this.transitionOpacity = 1, required this.active,  required this.inactive }) : super(key: key);
+  const ToogleWidget({ Key? key,
+    this.duration = const Duration(milliseconds: 300),
+    this.startOpacity = 0.3,
+    this.transitionOpacity = 1,
+    required this.active,
+    required this.inactive
+  }) : super(key: key);
 
   @override
   State<ToogleWidget> createState() => ToogleWidgetState();

@@ -19,7 +19,7 @@ class RotatingPageTransition extends PageTransitionsBuilder{
       
       const begin = 90.0;
       const end = 0.0;
-      const curve = Curves.easeInCubic;
+      const curve = Curves.ease;
       
       var tween1 = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
       var tween2 = Tween(begin: 0.0, end: begin*-1).chain(CurveTween(curve: curve));

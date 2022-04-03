@@ -26,7 +26,9 @@ class LockScreen extends StatelessWidget {
               key: _lockStatus,
               active: const Icon(Icons.lock, size: 200,),
               inactive:  const Icon(Icons.lock_open, size: 200,),
-              
+              duration: const Duration(milliseconds: 500),
+              startOpacity: 0.3,
+              transitionOpacity: 1,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,

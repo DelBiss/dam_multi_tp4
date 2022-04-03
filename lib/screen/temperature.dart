@@ -15,7 +15,6 @@ class TempScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: const Color.fromRGBO(0, 0, 255, 0.25),
       appBar: AppBar(
         title: const Text("Température"),
       ),
